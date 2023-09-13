@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bakery Inventory</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%- title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <%- include('../partials/nav.ejs') %>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-2">
+          <block sidebar>
+            <ul class="sidebar-nav">
+              <li>
+                <a href="/catalog">Home</a>
+              </li>
+
+              <li>
+                <a href="/catalog/food">All Foods</a>
+              </li>
+
+              <li>
+                <a href="/catalog/ingredient">All ingredients</a>
+              </li>
+
+              <li>
+                <a href="/catalog/category">All categories</a>
+              </li>
+
+              <li>
+                <hr />
+              </li>
+
+              <li>
+                <a href="/catalog/ingredient/create">Create new ingredient</a>
+              </li>
+
+              <li>
+                <a href="/catalog/category/create">Create new category</a>
+              </li>
+
+              <li>
+                <a href="/catalog/food/create">Create new food</a>
+              </li>
+            </ul>
+          </block>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-10">
+      <block>content</block>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+.sidebar-nav {
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  height: 100%;
+}
+
+#content {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 12rem;
+}
+
+.nav > li {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+#main {
+  margin: 0 2rem 0 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.button_div {
+  margin-top: 1rem;
+}
+
+#ingredient_check {
+  margin-top: 1rem;
+}
+
+button > a:link {
+  text-decoration: none;
+  color: black;
+}
+button > a:visited {
+  text-decoration: none;
+  color: black;
+}
+button > a:hover {
+  text-decoration: none;
+  color: black;
+}
+button > a:active {
+  text-decoration: none;
+  color: black;
+}
+
+button > a {
+  color: black;
+}
