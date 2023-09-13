@@ -3,6 +3,7 @@ var express = require("express");
 var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
+require("dotenv").config();
 
 const indexRouter = require("./routes/index");
 const usersRouter = require("./routes/users");
@@ -25,10 +26,7 @@ app.use(limiter);
 const mongoose = require("mongoose");
 mongoose.set("strictQuery", false);
 
-const dev_db_url =
-  "mongodb+srv://connorketcheson01:mJe3kAolJtVYMXDN@cluster0.94lclnd.mongodb.net/Inventory?retryWrites=true&w=majority";
-
-const mongoDB = process.env.MONGODB_URI || dev_db_url;
+const mongoDB = process.env.MONGO_URL;
 
 main().catch((err) => console.log(err));
 async function main() {
