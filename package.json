@@ -8,7 +8,7 @@
   "scripts": {
     "start": "node ./bin/www",
     "devstart": "nodemon ./bin/www",
-    "serverstart": "DEBUG=Inventory:* npm run devstart"
+    "serverstart": "DEBUG=Bakery-Inventory:* npm run devstart"
   },
   "dependencies": {
     "async": "^3.2.4",
