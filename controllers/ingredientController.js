@@ -144,6 +144,7 @@ exports.ingredient_update_post = [
     const ingredient = new Ingredient({
       name: req.body.name,
       stock: req.body.stock,
+      _id: req.params.id,
     });
 
     if (!errors.isEmpty()) {
@@ -154,7 +155,7 @@ exports.ingredient_update_post = [
       });
       return;
     } else {
-      const updatedIngredient = await Ingredient.findbyIdAndUpdate(
+      const updatedIngredient = await Ingredient.findByIdAndUpdate(
         req.params.id,
         ingredient,
         {}

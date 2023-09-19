@@ -168,7 +168,7 @@ exports.food_update_get = asyncHandler(async (req, res, next) => {
   res.render("food_form", {
     title: "Update Food",
     ingredients: allIngredients,
-    category: category,
+    categories: category,
     food: food,
   });
 });
