@@ -154,9 +154,10 @@ exports.ingredient_update_post = [
       });
       return;
     } else {
-      const updatedIngredient = await ingredient.findbyIdandUpdate(
+      const updatedIngredient = await Ingredient.findbyIdandUpdate(
         req.params.id,
-        ingredient
+        ingredient,
+        {}
       );
       res.redirect(updatedIngredient.url);
     }
