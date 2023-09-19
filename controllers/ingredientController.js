@@ -154,7 +154,7 @@ exports.ingredient_update_post = [
       });
       return;
     } else {
-      const updatedIngredient = await Ingredient.findbyIdandUpdate(
+      const updatedIngredient = await Ingredient.findbyIdAndUpdate(
         req.params.id,
         ingredient,
         {}
